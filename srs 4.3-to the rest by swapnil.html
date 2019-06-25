@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3 id="Login">4.3	Login</h3>
+    <h4>4.3.1 Description and Priority</h4>
+    <p>If user has registered, then he should be able to login to the 'Tonatuni' application. The login information will be stored on phone/computer and user will be automatically logged in next time.</p>
+    <p><strong>Priority:</strong> High</p>
+    <h4>4.3.2 Stimulus/Response Sequences</h4>
+    <p>The login screen contains two input text boxes. One for entering username and other for entering password. User will press login button after entering username and password.</p>
+    <h4>4.3.3 Functional Requirements</h4>
+    <ul>
+    	<li><strong>REQ 1-</strong>Once user has entered login information, the system should look into its database and check whether this username exists or not.</li>
+    	<li><strong>REQ 2-</strong>If username is found, the system will authenticate password as well. If password is also matched, User should be allowed access to his./her profile</li>
+    </ul>
+    <p>In exception cases system should show relevant error message</p>
+
+
+
+    <h3 id="Swipeable Cards">4.4.Swipeable Cards</h3>
+    <h4>4.4.1 Description and Priority</h4>
+    <p>Swipeable cards effect similar to the tinder cards effect. A card should display an image with several options (like, chat).</p>
+    <p><strong>Priority:</strong> High</p>
+    <h4>4.4.2 Stimulus/Response Sequences</h4>
+    <p>A card should be shown to the user with a pictures of the relevant persons and contains several options, like/love, chat etc. A user decides whether he/she like looks of a person or not. If user like, he/she will press like button and it will enable chat option, otherwise they’ll swipe to the next card.</p>
+
+    <h3 id="Set Loves/Likes">4.5 Set Loves/Likes</h3>
+    <h4>4.5.1 Description and Priority</h4>
+    <p>When you like some person from displayed cards, you’ll hit like button. The person will know that you liked him/her. And this like will be added to his/her profile and a math will be made.</p>
+    <p><strong>Priority:</strong>Medium</p>
+    <h4>4.5.2 Stimulus/Response Sequences</h4>
+    <p>A user should be shown Swipeable card, which displays the picture of a matched person. If user like it, he/she will press like button and that the liked person should be notified about this like.</p>
+    <h4>4.5.3 Functional Requirements</h4>
+    <ul>
+    	<li><strong>REQ 1-</strong>A system should add like/loves to the profile of liked person and also update this information in database.</li>
+
+    </ul>
+    <p>In exception cases system should show relevant error message</p>
+
+
+
+
+
+    <h3 id="Chat">4.6 Chat</h3>
+    <h4>4.6.1 Description and Priority</h4>
+    <p>Swipeable cards should have a chat option that allow users to chat with a person/match that they like.</p>
+    <p><strong>Priority:</strong>Medium</p>
+    <h4>4.6.2 Stimulus/Response Sequences</h4>
+    <p>If a user likes a card, he should press chat button which should take him to the chat box/inbox, where he/she can communicate with that person.</p>
+    <h4>4.6.3 Functional Requirements</h4>
+    <ul>
+    	<li><strong>REQ 1-</strong>The chat box should contain an option to video call and voice call.</li>
+    	<li><strong>REQ 2-</strong>An option should be given to user to share images in chat box.</li>
+
+    </ul>
+    <p>In exception cases system should show relevant error message</p>
+
+    <h3 id="Matching">4.7 Matching</h3>
+    <h4>4.7.1 Description and Priority</h4>
+    <p>If user likes someone, he’ll press like/love button and this will create a match between them.</p>
+    <p><strong>Priority:</strong>Medium</p>
+    <h4>4.7.2 Functional Requirements</h4>
+    <ul>
+    	<li><strong>REQ 1-</strong>When user likes some person, system should allow user to chat with him/her.</li>
+    </ul>
+    <p>In exception cases system should show relevant error message</p>
+
+    <h3 id="User profile">4.8	User profile</h3>
+    <h4>4.8.1 Description and Priority</h4>
+    <p>The user profile should display profile picture of the user, username, dob, and gender.</p>
+    <p><strong>Priority:</strong>Medium</p>
+    <h4>4.8.2 Stimulus/Response Sequences</h4>
+    <p>When user successfully log in, he will be shown his profile with several options like change  name, password, profile picture. The profile page will also show likes/loves that user has received.</p>
+    <h4>4.8.3 Functional Requirements</h4>
+    <ul>
+    	<li><strong>REQ 1-</strong>A profile should display profile picture of the user and number of people that like him/her.</li>
+      <li><strong>REQ 2-</strong>It should enable the user to change name, password and profile picture.</li>
+    </ul>
+    <p>In exception cases system should show relevant error message</p>
+
+
+
+
+    <h2 id="Other Nonfunctional Requirements">5.Other Non-functional Requirements</h2>
+    <h3 id="Performance Requirement">5.1 Performance Requirements</h3>
+    <p>The app should be interactive and involved delays must be minimum .So in every action/response of this app, there should be no immediate delays. The system should be highly responsive to the actions involved. Login process for good internet connection should not take more than 4 seconds. The uploading of pictures should be fast and immediate. The chat between the users should be fast and reliable.
+    </p>
+
+    <h3 id="Safety Requirements">5.2 Safety Requirements</h3>
+    <p>In case of a server breakdown, the last checkpoint will be saved automatically.</p>
+    <h3 id="Security Requirements">5.3 Security Requirements</h3>
+    <p>The communication between server and the system should be highly secured and private. The login requests to the server should be end to end encrypted, so others cannot extract usernames/password during process. If someone without an account tries to login, the system should not allow him to do so, a user’s IP should not be able to login after three failed login attempts. If a user wants to create an account and the desired user name is occupied, the user should be asked to choose a different user name. </p>
+    <h3 id="Software Quality Attributes">5.4 Software Quality Attributes</h3>
+    <p>The system should consider these characteristics:-
+    <ul>
+      <li>Adaptability</li>
+      <li>Availability(Availability of  the system when it is used)</li>
+      <li>Correctness</li>
+      <li>Reliability</li>
+      <li>Maintainability: The app should be easy to extend/modify. The code should be written in that way that it favors implementation of new functions.</li>
+      <li>Portability : The mobile app should be portable with different versions of android</li>
+    </ul>
+    </p>
+    <h3 id="Business Rules">5.5	 Business Rules</h3>
+    <ul>
+    	<li>A User cannot check other users' credentials</li>
+    	<li>Users confidentiality must be kept.</li>
+    </ul>
+
+
+
+    <h2 id="Other Requirements">6. Other Requirements</h2>
+    <p>The website & App will require to follow the legal requirements while being used such as US Digital Millennium Copyright Act.
+     The project is sustainable and can be reused for similar purposes such as for online interaction purposes.</p>
+
+
+
+    <h2 id="Appendix A: Glossary">Appendix A: Glossary</h2>
+    <p>Here are the terminologies used commonly in the SRS:</p>
+    <p>System: A set of things/ happenings that are working together</p>
+
+
+
+
+    <h2 id="Appendix B: Analysis Models">Appendix B: Analysis Models</h2>
+    <p>To be added later.</p>
+
+  </body>
+</html>
